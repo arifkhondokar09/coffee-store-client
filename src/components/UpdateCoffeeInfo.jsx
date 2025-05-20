@@ -1,10 +1,10 @@
 import React from 'react';
-import { useLoaderData, useNavigate } from 'react-router';
+import { useLoaderData } from 'react-router';
 import Swal from 'sweetalert2';
 
 const UpdateCoffeeInfo = () => {
     const coffeeDetails = useLoaderData();
-    const navigate = useNavigate();
+   
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -35,7 +35,7 @@ const UpdateCoffeeInfo = () => {
                     });
 
 
-                    navigate("/")
+                 
                 }
 
             })
